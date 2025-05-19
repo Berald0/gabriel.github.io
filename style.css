@@ -63,7 +63,9 @@ nav label:hover {
 #contato:checked ~ main #secao-contato {
   display: block;
 }
-
+h1 {
+  color: white;
+}
 /* Estilo dos títulos e formulário */
 h2 {
   margin-bottom: 15px;
