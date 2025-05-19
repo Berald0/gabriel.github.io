@@ -1,0 +1,57 @@
+body {
+    background-image: url('../../imagens/calcfundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.tela {
+    background-color: gray;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    min-height: 50px;
+    word-wrap: break-word;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.botoes button:hover {
+    background-color: #ccc;
+}
+
+.igual {
+    grid-column: span 2;
+    background-color: #f28c28;
+    color: black;
+}
