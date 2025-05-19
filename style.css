@@ -1,0 +1,103 @@
+/* Reset e estilo global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  background-image: url('imagens/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Oculta os radios */
+input[type="radio"] {
+  display: none;
+}
+
+/* Menu fixo no topo */
+header {
+  background: #333;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Estilo dos botões do menu (labels) */
+nav label {
+  color: white;
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Cor ao passar o mouse nos links do menu */
+nav label:hover {
+  color: #00bfff;
+}
+
+/* Todas as seções ficam escondidas inicialmente */
+.secao {
+  display: none;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Mostra apenas a seção correspondente ao radio marcado */
+#sobre:checked ~ main #secao-sobre,
+#formacao:checked ~ main #secao-formacao,
+#portfolio:checked ~ main #secao-portfolio,
+#contato:checked ~ main #secao-contato {
+  display: block;
+}
+
+/* Estilo dos títulos e formulário */
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+/* Formulário de contato - organização em coluna */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo dos campos de texto e área de mensagem */
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo do botão de envio */
+button {
+  padding: 10px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background: #007acc;
+}

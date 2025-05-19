@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Pessoal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <!-- Inputs do tipo radio que controlam as seções -->
+  <input type="radio" name="secao" id="sobre" checked>
+  <input type="radio" name="secao" id="formacao">
+  <input type="radio" name="secao" id="portfolio">
+  <input type="radio" name="secao" id="contato">
+
+  <!-- Menu fixo com labels como botões -->
+  <header>
+    <nav>
+      <label for="sobre">Sobre Mim</label>
+      <label for="formacao">Formação</label>
+      <label for="portfolio">Portfólio</label>
+      <label for="contato">Contato</label>
+    </nav>
+  </header>
+
+  <!-- Seções: que apenas uma será visível por vez -->
+   <!-- Seção: sobre mim -->
+  <main>
+    <section class="secao" id="secao-sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Meu nome é Gabriel Beraldo.</p>
+      <br>
+      <p>Gosto de tecnologia,ciência e inovação desde pequeno.</p>
+      <br>
+      <p>Estou sempre aprendendo algo novo todo dia.</p>
+      <br>
+      <p>Meus hobbies são ler, jogar jogos, ir na academia e comer.</p>
+      <br>
+      <p>Atualmente estou trabalhando</p>
+      <br>
+      <p>Meus filmes favoritos são "Piratas do Caribe", "O Elo Perdido" e "Era uma Vez em... Hollywood"</p>
+    </section>
+
+    <!-- Seção: formação -->
+    <section class="secao" id="secao-formacao">
+      <h2>Formação Educacional</h2>
+      <ul>
+        <li>Ciência de Dados - Uninter</li>
+        <li>Engenharia de Software - PUCCAMP</li>
+        <li>Ensino Médio - Anglo</li>
+      </ul>
+      <br>
+      <h2>Emprego</h2>
+      <br>
+      <ul>
+        <li>Estágio em SAP</li>
+      </ul>
+      <br>
+      <h2>Idiomas</h2>
+      <br>
+      <ul>
+        <li>Português (nativo)</li>
+        <li>Inglês (intermediário/avançado)</li>
+      </ul>
+    </section>
+
+    <!-- Seção: portifólio -->
+    <section class="secao" id="secao-portfolio">
+      <h2>Meu Portfólio</h2>
+      <ul>
+        <li><a href="projetos/projeto1/index.html" target="_blank">Projeto 1 - Receita</a></li>
+        <br>
+        <li><a href="projetos/projeto2/index.html" target="_blank">Projeto 2</a></li>
+      </ul>
+    </section>
+
+    <!-- Seção: entre em contato -->
+    <section class="secao" id="secao-contato">
+      <h2>Contatos</h2>
+      <form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" placeholder="Nome"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email@email.com"/>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" placeholder="Deixe sua mensagem..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
